@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <script src="https://kit.fontawesome.com/cb2a38d3d5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>MyPorfolio</title>
 </head>
 <body>
-    
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <div class="row">
         <div id="left" class="column">
 
@@ -30,7 +30,8 @@
                 <input type="submit" name="email" id="email" value="Email me">
             </div>
         </div>
-       <!----> <div id="right" class="column">
+      
+        <div id="right" class="column">
             <div id="about-me">
                 <h1>About me</h1>
                 <p>I like to think of myself as someone who knows what they want in life, motivated and who can't get off the computer if there is a problem that needs to be solved.</p>
@@ -69,7 +70,7 @@
                             <i class="fas fa-code fa-2x"></i>
                             <div>
                                 <h4>My projects</h4>
-                                <p>Here you can view my <strong style="font-size: 16px;">PORTFOLIO</strong></p>
+                                <p>Here you can view my <strong style="font-size: 16px;"><a id="test" href="#pop-up">PORTFOLIO</a></strong></p>
                             </div>
                             
                         </div>
@@ -80,8 +81,50 @@
             
             
         </div>
+        <div id="pop-up" class="alternate">
+
+            <h1 id="portfolio-title">Portfolio</h1>
+            <div id="portfolio">
+                <a href="#right" id="button">ABOUT ME</a>
+                
+                <a href="https://sad-swirles-102141.netlify.com/"></a>
+            </div>
+        </div> <!---->
 
     </div>
+    
+       
+       <script>
+
+        var right = document.getElementById("right");
+        var popUp = document.getElementById("pop-up");
+        var button1 = document.getElementById("test");
+        var button2 = document.getElementById("button");
+        var button3 = document.getElementById("please");
+
+        button1.onclick = function() {
+            if(right.className == "column") {
+                popUp.className = "down";
+                right.className = "up";
+            } else {
+                popUp.className = "";
+                right.className = "column";
+            }
+        }
+
+        button2.onclick = function() {
+            if(popUp.className == "down") {
+                popUp.className = "";
+                right.className = "column";
+            } else {
+                popUp.className = "down";
+                right.className = "up";
+            }
+        }
+
+
+
+       </script>
 
 </body>
 </html>
