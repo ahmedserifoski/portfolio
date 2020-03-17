@@ -7,8 +7,7 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    background: linear-gradient(150deg, rgb(156, 122, 142), rgb(124, 121, 168));
-    
+    background-image: url("Images/code.jpeg");
     color: rgb(48, 48, 48);
     display: flex;
     flex-wrap: wrap;
@@ -18,6 +17,7 @@ body {
 
 .row {
     width: 100%;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -38,7 +38,7 @@ body {
 #left {
     
     width: 80%;
-    margin: 10px 10px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -196,16 +196,28 @@ body {
     width: 80%;
 }
 
+#test {
+    margin-top: -18px;
+    width: 140px;
+    color:  rgb(3, 143, 207);
+    font-size: 14px;
+    border: 0;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+/*
 #projects {
     border: 2px solid  rgb(3, 143, 207);
 }
-
+*/
 #pop-up {
     height: 500px;
     width: 80%;
     display: none;
     flex-direction: column;
-    
+    margin-bottom: 10px;
     border-radius: 16px;
     background-color: white;
 }
@@ -223,11 +235,14 @@ body {
 */
 #portfolio-title {
     padding: 26px 30px;
+    display: flex;
+    align-self: center;
+    
 }
 
 #portfolio {
     background-color: rgb(230, 230, 230);
-    height: 100%;
+    height: auto;
     width: 100%;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
@@ -235,10 +250,22 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 26px;
 }
 
 #button {
-    
+    padding: 10px 15px;
+    width: 140px;
+    background-color:  rgb(3, 143, 207);
+    color: white;
+    font-size: 14px;
+    border: 0;
+    border-radius: 16px;
+    margin: -10px 60px 30px 60px;
+    align-self: center;
+    text-align: center;
 }
 
 a {
@@ -247,16 +274,50 @@ a {
 }
 
 .img-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     overflow: hidden;
 }
 
-#king-tut, #fortnite {
-    width: 17vw;
+.img-wrapper a {
+    font-size: 18px;
+    
+}
+
+#king-tut, #fortnite, #shanghai {
+    width: 250px;
+    margin: 5px;
     height: auto;
     overflow: hidden;
     border-radius: 5px;
+    border: 1px solid black;
 }
 
+@media screen and (min-width: 500px) {
+
+    #portfolio {
+        margin-bottom: 10px;
+    }
+
+    #pop-up.down {
+        margin-bottom: 10px;
+    }
+
+    #test {
+        margin-top: 7px;
+        padding: 10px 25px;
+        width: 140px;
+        background-color:  rgb(3, 143, 207);
+        color: white;
+        font-size: 14px;
+        border: 0;
+        border-radius: 16px;
+        display: flex;
+        justify-content: center;
+        
+    }
+}
 
 
 @media screen and (min-width: 730px) {
@@ -276,11 +337,10 @@ a {
 
 @media screen and (min-width: 1200px) {
     .row {
-        
         height: 100vh;
         width: 95%;
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: row;
         justify-content: center;
         align-items: center;
     }
@@ -303,9 +363,6 @@ a {
         align-items: center;
         justify-content: flex-start;
     }
-    
-    
-    
     
     
     #me {
@@ -372,11 +429,11 @@ a {
         align-self: center;
         padding-left: 8px;
     }
-
+/*
     #git{
         color:  rgb(48, 48, 48);
     }
-    
+  */  
     #email {
         cursor: pointer;
         padding: 10px 15px;
@@ -399,21 +456,29 @@ a {
     
     #right {
         min-width: 400px;
-        max-width: 600px;
+        max-width: 800px;
         height: 561px;
-        
         margin: auto 10px;
         display: flex;
         flex-direction: column;
-        
     }
 
     #right.up {
         display: none;
     }
+
+    #portfolio {
+        margin-bottom: 0;
+    }
+
+    #portfolio-title {
+        align-self: flex-start;
+    }
     
-    #about-me {
-        padding: 26px 30px;
+    #button {
+        margin-top: -70px;
+        padding: 10px 30px;
+        align-self: flex-end;
     }
 
     
@@ -425,7 +490,7 @@ a {
         align-items: flex-start;
         width: 100%;
         border-radius: 0 0 16px 16px;
-    
+        padding-bottom: 42px;
     }
 
     
@@ -483,11 +548,11 @@ a {
     #small-right {
         margin-left: 10px;
     }
-    
+    /*
     #projects {
         border: 2px solid  rgb(3, 143, 207);
     }
-    
+    */
     #pop-up {
         height: 560px;
         display: none;
@@ -502,19 +567,18 @@ a {
     
     #portfolio {
         background-color: rgb(230, 230, 230);
-        height: 100%;
+        height: 100vh;
         width: 100%;
-        
+        padding: 10px;
     } 
 
     #pop-up.down {
         min-width: 400px;
         max-width: 800px;
-        height: 561px;
+        height: 560px;
         margin: auto 10px;
         display: flex;
         flex-direction: column;
-        
         /*animation: dropdown 0.5s ease forwards;*/
     }
 }
