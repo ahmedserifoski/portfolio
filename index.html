@@ -8,13 +8,14 @@
     <title>MyPorfolio</title>
 </head>
 <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    
     <div class="row">
         <div id="left" class="column">
-
+            <div id="left-up"></div>
             <img id="me" src="Images/myself.jpg" alt="my-image">
             <h3 id="name">Ahmed <strong>Serifoski</strong></h3>
             <h4 id="title">Web Developer</h4>
+            <div id="left-down"></div>
             <div id="social-media">
                 <a href="https://twitter.com/AhmedSerifoski" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
                 <a href="https://www.instagram.com/ahmed.serifoski/?hl=en" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
@@ -34,7 +35,7 @@
         <div id="right" class="column">
             <div id="about-me">
                 <h1>About me</h1>
-                <p>I like to think of myself as someone who knows what they want in life, motivated and who can't get off the computer if there is a problem that needs to be solved.</p>
+                <p>I like to think of myself as someone who knows what they want in life, is motivated and who can't get off the computer if there is a problem that needs to be solved.</p>
             </div>
             <div id="what-im-doing">
                 <h1>What I'm doing</h1>
@@ -82,9 +83,15 @@
             
         </div>
         <div id="pop-up" class="up">
-
-            <h1 id="portfolio-title">Portfolio</h1>
-            <a href="#right" id="button">About Me</a>
+            <div id="pop-up-top">
+                <h1 id="portfolio-title">Portfolio</h1>
+                <div id="buttons">
+                    <a href="#right" id="button2">React</a>
+                    <a href="#right" id="button">About Me</a>
+                </div>
+            </div>
+            
+            
             <div id="portfolio">
 
                 <div class="img-wrapper">
@@ -148,7 +155,7 @@
         var popUp = document.getElementById("pop-up");
         var button1 = document.getElementById("test");
         var button2 = document.getElementById("button");
-        var button3 = document.getElementById("please");
+        
 
         button1.onclick = function() {
             if(right.className == "column") {
