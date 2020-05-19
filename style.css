@@ -7,7 +7,7 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    background: linear-gradient(115deg, rgb(3, 143, 207),rgb(152, 3, 211) );
+    background: linear-gradient(115deg, rgb(135, 217, 255),rgb(217, 122, 255) );
     background-size: cover;
     color: rgb(48, 48, 48);
     display: flex;
@@ -245,7 +245,7 @@ body {
     }
 }
 
-#pop-up {
+#pop-up, #pop-up-react {
     height: 500px;
     width: 80%;
     display: none;
@@ -255,10 +255,10 @@ body {
     background-color: white;
 }
 
-#pop-up.down {
+#pop-up.down, #pop-up-react.down {
     display: flex;
     flex-direction: column;
-    margin: 20px auto 10px auto;
+    margin: 20px;
     /*animation: dropdown 0.5s ease forwards;*/
 }
 /*
@@ -426,20 +426,21 @@ a {
     
     .column {
         border-radius: 16px;
-        height: 560px;
+        height: 760px;
         background-color: white;
         
     }
     
     #left {
-        width: 250px;
-        height: 560px;
+        width: 300px;
+        height: 561px;
         margin: auto 10px;
         display: flex;
         flex-flow: column;
         align-items: center;
         justify-content: flex-start;
     }
+
     
     
     #me {
@@ -533,17 +534,29 @@ a {
     
     #right {
         min-width: 400px;
-        max-width: 800px;
+        max-width: 780px;
         height: 561px;
         margin: auto 10px;
         display: flex;
         flex-direction: column;
+        justify-content: flex-end;
     }
 
     #right.up {
         display: none;
     }
 
+
+
+    #pop-up.down, #pop-up-react.down {
+        max-width: 80%;
+        height: 561px;
+    }
+
+    #pop-up-react {
+        width: 800px;
+    }
+   
     #portfolio {
         margin-bottom: 0;
     }
@@ -557,6 +570,7 @@ a {
         padding: 10px 30px;
         align-self: flex-end;
     }
+    
 
     
     #what-im-doing {
@@ -565,6 +579,7 @@ a {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        align-self: flex-end;
         width: 100%;
         border-radius: 0 0 16px 16px;
         padding-bottom: 41px;
