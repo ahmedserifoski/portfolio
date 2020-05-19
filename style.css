@@ -335,12 +335,18 @@ a {
 #king-tut, #fortnite, #shanghai, #fitbit {
     
     width: 210px;
-    
+    text-align: center;
     margin: 5px;
     height: auto;
     overflow: hidden;
     border-radius: 5px;
     border: 1px solid black;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media screen and (min-width: 500px) {
@@ -349,6 +355,7 @@ a {
         width: 250px;
     }
 
+    
     
 
     
@@ -403,8 +410,25 @@ a {
     }
 }
 
+@media screen and (min-width: 900px) {
 
-@media screen and (min-width: 1300px) {
+    #left {
+        height: 561px;
+        width: 250px;
+    }
+
+    #pop-up.down {
+        width: 580px;
+        height: 561px;
+    }
+
+    #portfolio {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (min-width: 1240px) {
     .row {
         height: 100vh;
         width: 95%;
@@ -424,7 +448,7 @@ a {
     }
     
     #left {
-        width: 300px;
+        width: 250px;
         height: 561px;
         margin: auto 10px;
         display: flex;
@@ -558,6 +582,7 @@ a {
         margin-bottom: 0px;
         padding-bottom: 0px;
         overflow-y: scroll;
+        overflow-x: hidden;
         
     }
 
