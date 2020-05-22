@@ -171,7 +171,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: linen;
+    
 }
 
 .but {
@@ -185,7 +185,12 @@ body {
     border-radius: 16px;
     align-self: center;
     text-align: center;
+    
 }
+
+.but:hover {
+    background-color: rgb(224, 245, 255);
+  }
 
 .show {
     display: flex;
@@ -195,14 +200,37 @@ body {
     display: none;
 }
 
-#what-im-doing {
+.what-im-doing, .react-projects, .vanilla-projects {
     padding: 20px 30px;
     background-color: rgb(230, 230, 230);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     width: 100%;
     border-radius: 0 0 16px 16px;
+}
+
+.vanilla-projects {
+    display: none;
+    min-height: 450px;
+    overflow-y: scroll;
+}
+
+
+
+.react-projects {
+    display: none;
+    min-height: 450px;
+    overflow-y: scroll;
+}
+
+.show {
+    display: flex;
+}
+
+.hide {
+    display: none;
 }
 
 #two-columns {
@@ -250,6 +278,7 @@ body {
     margin-left: 10px;
     font-size: 13px;
     width: 95%;
+    
 }
 
 #test {
@@ -265,6 +294,19 @@ body {
         justify-content: center;
 }
 
+/* #react-projects {
+    padding: 20px 30px;
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    border-radius: 0 0 16px 16px;
+} */
+
+.hide {
+    display: none;
+}
 
 #pop-up{
     height: 500px;
@@ -427,13 +469,26 @@ a {
     }
 
     .tiny-side {
+        height: 15vh;
         margin: 5px;
     }
 }
 
 @media screen and (min-width: 900px) {
 
-    
+    .what-im-doing {
+        height: 450px;
+    }
+
+    .tiny-side {
+        height: 10vh;
+    }
+
+    .vanilla-projects {
+        display: none;
+        height: 450px;
+        overflow-y: scroll;
+    }
 
     #left {
         height: 561px;
@@ -456,7 +511,7 @@ a {
 
     #right-top > h1 {
         display: flex;
-        background-color: mediumseagreen;
+        
         
     }
 
@@ -597,7 +652,7 @@ a {
     
     #right {
         width: 70vw;
-        max-width: 1200px;
+        max-width: 1000px;
         height: 561px;
         margin: auto 10px;
         display: flex;
@@ -653,11 +708,12 @@ a {
         margin-top: -70px;
         padding: 10px 30px;
         align-self: flex-end;
+        
     }
     
 
     
-    #what-im-doing {
+    .what-im-doing {
         padding: 20px 30px;
         background-color: rgb(230, 230, 230);
         display: flex;
@@ -669,8 +725,16 @@ a {
         padding-bottom: 41px;
     }
 
+    .what-im-doing {
+        height: 450px;
+    }
+
+    .tiny-side {
+        height: 10vh;
+    }
+
     
-    #what-im-doing h1 {
+    .what-im-doing h1 {
         align-items: flex-start;
     }
     

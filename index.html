@@ -41,7 +41,7 @@
                     <a href="#right" id="react" class = "but">React.js</a>
                 </div>
             </div>
-            <div id="about-me" class="hide">
+            <div class="what-im-doing" >
                 <h1>What I'm doing</h1>
 
                 <div id="two-columns">
@@ -82,15 +82,54 @@
                     </div>
                 </div>
             </div>
-            <div class="hide">
-                
+            <div class="vanilla-projects">
+
+                <div class="img-wrapper">
+                    <a class="link" href="https://fortniteclone.netlify.com/" target="_blank">
+                        <img id="fortnite"  src="Images/fortnite.png" alt="Fortnite">
+                        <h4>Fortnite Clone</h4>
+                        <a href="https://github.com/chingu-voyages/v13-toucans-team-04" target="_blank">Github</a>
+                    </a>
+                </div>
+
+                <div class="img-wrapper">
+                    <a class="link"    href="https://serene-leakey-9958e3.netlify.com/" target="_blank">
+                        <img id="fitbit"  src="Images/product_landing_page_fitbit.png" alt="Fitbit">
+                        <h4>Fitbit Landing Page Clone</h4>
+                        <a href="https://github.com/ahmedserifoski/fitbit_landing_page" target="_blank">Github</a>
+                        
+                    </a>
+                </div>
+
+                <div class="img-wrapper">
+                    <a class="link" href="https://quizzical-fermat-c4937f.netlify.com/" target="_blank">
+                        <img id="shanghai"  src="Images/shanghai-coffee.png" alt="Shanghai Coffee">
+                        <h4>Survey Form</h4>
+                        <a href="https://github.com/ahmedserifoski/Survey_Form_Coffee_Shop" target="_blank">Github</a>
+                    </a>
+                </div>
+
+                <div class="img-wrapper">
+                    <a class="link" href="https://sad-swirles-102141.netlify.com/" target="_blank">
+                        <img id="king-tut"  src="Images/king-tut.png" alt="Tutankhamun">
+                        <h4>Tribute page</h4>
+                        <a href="https://github.com/ahmedserifoski/tutankhamun_tribute_page" target="_blank">Github</a>
+                    </a>
+                </div>
+
+                <div class="img-wrapper">
+                    <a class="link" href="https://quirky-bhabha-77e0cc.netlify.com/" target="_blank">
+                        <img id="fortnite"  src="Images/google-fonts.png" alt="Google-Fonts">
+                        <h4>Google Fonts Clone</h4>
+                        <a href="https://github.com/ahmedserifoski/ahmedserifoski.github.io" target="_blank">Github</a>
+                    </a>
+                </div>
             </div>
-            <div id="react-projects" class="hide">
+            <div class="react-projects">
                 <div class="img-wrapper">
                     <a class="link" href="https://react-fitbit-landing-page.netlify.app/" target="_blank">
                         <img id="fitbit"  src="Images/product_landing_page_fitbit.png" alt="Fitbit Landing page">
                         <h4>Fitbit Landing Page Clone</h4>
-                        <p class="tech">HTML, CSS, REACT</p>
                         <a href="https://github.com/ahmedserifoski/react-fitbit-product-landing-page" target="_blank">Github</a>
                     </a>
                 </div>
@@ -99,7 +138,6 @@
                     <a class="link" href="https://react-survey-form-coffee-shop.netlify.app/" target="_blank">
                         <img id="shanghai"  src="Images/shanghai-coffee.png" alt="Survey Form Coffee Shop">
                         <h4>Survey Form</h4>
-                        <p class="tech">HTML, CSS, REACT</p>
                         <a href="https://github.com/ahmedserifoski/react_survey_form_coffee_shop" target="_blank">Github</a>
                     </a>
                 </div>
@@ -108,7 +146,6 @@
                     <a class="link" href="https://react-tutankhamun-landing-page.netlify.app/" target="_blank">
                         <img id="king-tut"  src="Images/king-tut.png" alt="Tutankhamun">
                         <h4>Tutankhamun Tribute page</h4>
-                        <p class="tech">HTML, CSS, REACT</p>
                         <a href="https://github.com/ahmedserifoski/react-tutankhamun" target="_blank">Github</a>
                     </a>
                 </div>
@@ -118,7 +155,54 @@
         
     </div>
 
-    
+    <script>
+        var button1 = document.getElementById("about")
+        var button2 = document.getElementById("vanilla")
+        var button3 = document.getElementById("react")
+
+        
+
+        button1.onclick = function() {
+            
+            document.getElementsByClassName('react-projects')[0]. 
+            style.display = 'none'
+
+            document.getElementsByClassName('what-im-doing')[0]. 
+            style.display = 'flex'
+
+            document.getElementsByClassName('vanilla-projects')[0]. 
+            style.display = 'none'
+        }
+
+        button2.onclick = function() {
+            
+            document.getElementsByClassName('react-projects')[0]. 
+            style.display = 'none'
+
+            document.getElementsByClassName('what-im-doing')[0]. 
+            style.display = 'none'
+
+            document.getElementsByClassName('vanilla-projects')[0]. 
+            style.display = 'flex'
+        }
+        
+        button3.onclick = function() {
+            
+            document.getElementsByClassName('react-projects')[0]. 
+            style.display = 'flex'
+
+            document.getElementsByClassName('what-im-doing')[0]. 
+            style.display = 'none'
+
+            document.getElementsByClassName('vanilla-projects')[0]. 
+            style.display = 'none'
+        }
+
+
+        
+
+
+    </script>
     
        
        <!-- <script>
