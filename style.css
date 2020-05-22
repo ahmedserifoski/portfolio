@@ -40,13 +40,7 @@ body {
     
     width: 80%;
     margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-#left-up, #left-down {
+    margin-left: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,7 +83,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 25px auto 10px auto;
+    margin: 35px auto 10px auto;
     background-color: rgb(230, 230, 230);
 }
 
@@ -125,6 +119,7 @@ body {
     border: 0;
     border-radius: 16px;
     margin: 20px auto;
+    margin: 40px auto;
 }
 
 #right {
@@ -134,26 +129,6 @@ body {
     flex-wrap: wrap;
     align-items: flex-start;
     
-}
-
-#right.up {
-    display: none;
-}
-/*
-@keyframes liftof{
-    0%{}
-    100%{ transform: translateY(-10000);}
-}
-*/
-
-
-
-#about-me {
-    display: flex;
-    background-color: white;
-    border-radius: 16px 16px 0 0;
-    padding: 26px 30px;
-    width: 100%;
 }
 
 #right-top {
@@ -214,7 +189,7 @@ body {
 .vanilla-projects {
     display: none;
     min-height: 450px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 
@@ -222,16 +197,10 @@ body {
 .react-projects {
     display: none;
     min-height: 450px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
-.show {
-    display: flex;
-}
 
-.hide {
-    display: none;
-}
 
 #two-columns {
     background-color: rgb(230, 230, 230);
@@ -294,77 +263,6 @@ body {
         justify-content: center;
 }
 
-/* #react-projects {
-    padding: 20px 30px;
-    background-color: rgb(230, 230, 230);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-    border-radius: 0 0 16px 16px;
-} */
-
-.hide {
-    display: none;
-}
-
-#pop-up{
-    height: 500px;
-    width: 80%;
-    display: none;
-    flex-direction: column;
-    margin-bottom: 10px;
-    border-radius: 16px;
-    background-color: white;
-}
-
-#pop-up.down {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    /*animation: dropdown 0.5s ease forwards;*/
-}
-
-#pop-up-top {
-    display: flex;
-    align-self: center;
-}
-
-#portfolio-title {
-    padding: 26px 30px;
-    
-    display: none;
-}
-
-#portfolio {
-    background-color: rgb(230, 230, 230);
-    height: auto;
-    width: 100%;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    padding: 20px;
-    padding-bottom: 26px;
-    
-}
-
-#button {
-    padding: 10px 15px;
-    width: 140px;
-    background-color:  rgb(3, 143, 207);
-    color: white;
-    font-size: 14px;
-    margin: 20px;
-    border: 0;
-    border-radius: 16px;
-    align-self: center;
-    text-align: center;
-}
-
 a {
     text-decoration: none;
     color: rgb(3, 143, 207);
@@ -419,46 +317,12 @@ a {
     #king-tut, #fortnite, #shanghai, #fitbit {
         width: 250px;
     }
-
-
-    #pop-up.down {
-        margin-bottom: 10px;
-    }
-
-    #test {
-        margin-top: 7px;
-        padding: 10px 25px;
-        width: 140px;
-        background-color:  rgb(3, 143, 207);
-        color: white;
-        font-size: 14px;
-        border: 0;
-        border-radius: 16px;
-        display: flex;
-        justify-content: center;
-        
-    }
 }
 
 
 @media screen and (min-width: 730px) {
 
-  
-
-    #pop-up-top {
-        width: 100%;
-        justify-content: space-between;
-    }
-
-    #button {
-        margin-right: 40px;
-    }
-
     
-
-    #portfolio-title {
-        display: flex;
-    }
 
     #two-columns {
         flex-direction: row;
@@ -474,63 +338,52 @@ a {
     }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 920px) {
 
     .what-im-doing {
         height: 450px;
+        justify-content: flex-start;
     }
 
     .tiny-side {
-        height: 10vh;
+        
+        height: 10em;
     }
 
     .vanilla-projects {
         display: none;
         height: 450px;
-        overflow-y: scroll;
+        overflow-y: auto;
     }
 
     #left {
         height: 561px;
         width: 250px;
+        margin: auto 10px;
     }
 
     #right {
         height: 561px;
-        width: 620px;
-        
+        width: 68vw;
         flex-direction: column;
         justify-content: space-between;
+        margin: auto 10px;
     }
 
     #right-top {
         padding: 10px 30px 10px 30px;
-         flex-direction: row;
-
-    }
-
-    #right-top > h1 {
-        display: flex;
-        
-        
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     #mini-menu {
         width: 400px;
     }
-
-    #pop-up.down {
-        width: 580px;
-        height: 561px;
-    }
-
-    #portfolio {
-        overflow-y: scroll;
-        overflow-x: hidden;
-    }
 }
 
 @media screen and (min-width: 1240px) {
+
+
     .row {
         height: 100vh;
         width: 95%;
@@ -560,56 +413,6 @@ a {
     }
 
     
-    
-    #me {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        margin: 20px auto;
-        
-    }
-    
-    #name {
-        margin: 10px auto;
-        font-size: 22px;
-        font-weight: 400;
-    }
-    
-    #title {
-        margin: 15px;
-        background-color: rgb(230, 230, 230);
-        padding: 7px 14px;
-        border: 2px solid  rgb(3, 143, 207);
-        ;
-        border-radius: 16px;
-        font-size: 16px;
-        font-weight: 400;
-    }
-    
-    #social-media {
-        margin: 20px;
-    }
-    
-    
-    #other-info {
-        box-sizing: border-box;
-        text-align: center;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin: 12px auto;
-        background-color: rgb(230, 230, 230);
-    }
-    
-    #other-container {
-        
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 176px;
-        
-    }
-    
     .fas {
         padding: 5px;
         display: flex;
@@ -625,11 +428,6 @@ a {
         align-self: center;
         padding-left: 8px;
     }
-/*
-    #git{
-        color:  rgb(48, 48, 48);
-    }
-  */  
     #email {
         cursor: pointer;
         padding: 10px 15px;
@@ -670,67 +468,12 @@ a {
         justify-content: space-between;
     }
 
-    #right.up {
-        display: none;
-    }
-
-
-
-    #pop-up.down {
-        width: 880px;
-        height: 561px;
-    }
-
-   
-
-    #pop-up {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 880px;
-    }
-   
-    #portfolio {
-        margin-bottom: 0px;
-        padding-bottom: 0px;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        
-    }
-
-    
-
-    #portfolio-title {
-        align-self: flex-start;
-    }
-    
-    #button {
-        margin-top: -70px;
-        padding: 10px 30px;
-        align-self: flex-end;
-        
-    }
-    
-
-    
-    .what-im-doing {
-        padding: 20px 30px;
-        background-color: rgb(230, 230, 230);
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        align-self: flex-end;
-        width: 100%;
-        border-radius: 0 0 16px 16px;
-        padding-bottom: 41px;
-    }
-
     .what-im-doing {
         height: 450px;
     }
 
     .tiny-side {
-        height: 10vh;
+        height: 10em;
     }
 
     
@@ -743,7 +486,7 @@ a {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
+        
     }
     
     #two-columns .fa-2x  {
@@ -753,15 +496,11 @@ a {
     .small-side {
         
         background-color: rgb(230, 230, 230);
-        
-    
     }
     
     .tiny-side {
         height: 138px;
         width: 100%;
-        margin-bottom: 10px;
-        margin-top: 10px;
         padding: 5px;
         background-color: white;
         border-radius: 5px;
@@ -788,41 +527,4 @@ a {
     #small-right {
         margin-left: 10px;
     }
-    /*
-    #projects {
-        border: 2px solid  rgb(3, 143, 207);
-    }
-    */
-    #pop-up {
-        height: 560px;
-        display: none;
-        flex-direction: column;
-        border-radius: 16px;
-        background-color: white;
-    }
-    
-    #portfolio-title {
-        padding: 26px 30px;
-    }
-    
-    #portfolio {
-        background-color: rgb(230, 230, 230);
-        height: 100vh;
-        width: 100%;
-        padding: 10px;
-    } 
-
-    #pop-up.down {
-        min-width: 400px;
-        max-width: 880px;
-        height: 560px;
-        margin: auto 10px;
-        display: flex;
-        flex-direction: column;
-        /*animation: dropdown 0.5s ease forwards;*/
-    }
-}
-/*
-@media screen and (min-width: 1530px) {
-
 }
