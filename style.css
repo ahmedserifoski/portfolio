@@ -7,8 +7,7 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    background: linear-gradient(115deg, rgb(135, 217, 255),rgb(217, 122, 255) );
-    background-size: cover;
+    background: linear-gradient(115deg, rgb(135, 217, 255),rgb(217, 122, 255) ) no-repeat center center fixed;
     color: rgb(48, 48, 48);
     display: flex;
     flex-wrap: wrap;
@@ -48,21 +47,21 @@ body {
 }
 
 #me {
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 #name {
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 22px;
     font-weight: 400;
 }
 
 
 #title {
-    margin-top: 25px;
+    margin-top: 35px;
     background-color: rgb(230, 230, 230);
     padding: 7px 14px;
     border: 2px solid  rgb(3, 143, 207);
@@ -73,7 +72,7 @@ body {
 }
 
 #social-media {
-    margin-top: 25px;
+    margin-top: 45px;
 }
 
 
@@ -83,7 +82,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 35px auto 10px auto;
+    margin: 45px auto 10px auto;
     background-color: rgb(230, 230, 230);
 }
 
@@ -113,7 +112,7 @@ body {
     font-size: 14px;
     border: 0;
     border-radius: 16px;
-    margin: 20px auto;
+    
     margin: 40px auto;
 }
 
@@ -123,7 +122,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    
+    justify-content: center;
 }
 
 #right-top {
@@ -144,9 +143,16 @@ body {
     
 }
 
+.description {
+    width: 90%;
+    font-weight: 500;;
+    color: rgb(48, 48, 48);
+    margin-bottom: 10px;
+}
+
 .but {
     padding: 10px 15px;
-    width: 140px;
+    width: 120px;
     color:rgb(3, 143, 207);
     font-weight: 500;
     font-size: 14px;
@@ -332,45 +338,51 @@ a {
     }
 
     .tiny-side {
-        height: 15vh;
+        height: 8em;
         margin: 5px;
     }
 }
 
 @media screen and (min-width: 920px) {
 
+
     .what-im-doing {
-        height: 450px;
+        height: 470px;
         justify-content: flex-start;
+    }
+
+    .react-projects {
+        height: 470px;
     }
 
     .tiny-side {
         
-        height: 10em;
+        height: 8em;
     }
 
     .vanilla-projects {
         display: none;
-        height: 450px;
+        height: 470px;
         overflow-y: auto;
     }
 
     #left {
-        height: 561px;
+        height: 661px;
         width: 250px;
         margin: auto 10px;
     }
 
     #right {
-        height: 561px;
+        height: 661px;
         width: 68vw;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
         margin: auto 10px;
     }
 
     #right-top {
-        padding: 10px 30px 10px 30px;
+        padding: 10px 10px 0px 10px;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -453,6 +465,7 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
     }
 
 
@@ -465,14 +478,11 @@ a {
         justify-content: space-between;
     }
 
-    .what-im-doing {
-        height: 450px;
+    .description  {
+        width: 90%;
+        align-items: center;
     }
-
-    .tiny-side {
-        height: 10em;
-    }
-
+    
     
     .what-im-doing h1 {
         align-items: flex-start;
@@ -496,7 +506,7 @@ a {
     }
     
     .tiny-side {
-        height: 138px;
+        height: 8em;
         width: 100%;
         padding: 5px;
         background-color: white;

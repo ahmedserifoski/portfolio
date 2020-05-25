@@ -41,7 +41,15 @@
                     <a href="#right" id="react" class = "but">React.js</a>
                 </div>
             </div>
+            
+            <div class="description">
+                <p class="desc-p">
+                    Since I've been introduced to this amazing world of programming I haven't been able to stop learning new technologies and solve new problems. 
+                </p>
+            </div>
+
             <div class="what-im-doing" >
+                
                 <h1>What I'm doing</h1>
 
                 <div id="two-columns">
@@ -163,6 +171,9 @@
         
 
         button1.onclick = function() {
+
+            document.getElementsByClassName('desc-p')[0]. 
+            style.display = 'flex'            
             
             document.getElementsByClassName('react-projects')[0]. 
             style.display = 'none'
@@ -177,6 +188,9 @@
         }
 
         button2.onclick = function() {
+
+            document.getElementsByClassName('desc-p')[0]. 
+            style.display = 'none'
             
             document.getElementsByClassName('react-projects')[0]. 
             style.display = 'none'
@@ -191,6 +205,9 @@
         }
         
         button3.onclick = function() {
+
+            document.getElementsByClassName('desc-p')[0]. 
+            style.display = 'none'
             
             document.getElementsByClassName('react-projects')[0]. 
             style.display = 'flex'
