@@ -348,7 +348,6 @@ a {
 
 @media screen and (min-width: 920px) {
 
-
     .what-im-doing {
         height: 470px;
         justify-content: flex-start;
@@ -396,6 +395,10 @@ a {
 
     #mini-menu {
         width: 400px;
+    }
+
+    .img-wrapper {
+        margin: 10px;
     }
 }
 
