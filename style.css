@@ -92,7 +92,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    
+    padding: 11px;
 }
 
 .other {
@@ -112,8 +112,7 @@ body {
     font-size: 14px;
     border: 0;
     border-radius: 16px;
-    
-    margin: 40px auto;
+    margin: 30px auto;
 }
 
 #right {
@@ -143,16 +142,20 @@ body {
     
 }
 
-.description {
+.description, .description-vanilla, .description-react {
     width: 90%;
     font-weight: 500;;
     color: rgb(48, 48, 48);
-    margin-bottom: 10px;
+    margin: 15px;
+}
+
+.description-vanilla, .description-react {
+    display: none;
 }
 
 .but {
     padding: 10px 15px;
-    width: 120px;
+    width: 118px;
     color:rgb(3, 143, 207);
     font-weight: 500;
     font-size: 14px;
@@ -357,7 +360,7 @@ a {
 
     .tiny-side {
         
-        height: 8em;
+        height: 10em;
     }
 
     .vanilla-projects {
@@ -379,6 +382,10 @@ a {
         justify-content: space-between;
         align-items: center;
         margin: auto 10px;
+    }
+
+    #right-title {
+        margin-left: 20px;
     }
 
     #right-top {
@@ -415,7 +422,7 @@ a {
     
     #left {
         width: 250px;
-        height: 561px;
+        height: 661px;
         margin: auto 10px;
         display: flex;
         flex-flow: column;
@@ -460,12 +467,16 @@ a {
     #right {
         width: 70vw;
         max-width: 1000px;
-        height: 561px;
+        height: 661px;
         margin: auto 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .but {
+        width: 140px;
     }
 
 
@@ -506,9 +517,7 @@ a {
     }
     
     .tiny-side {
-        height: 8em;
         width: 100%;
-        padding: 5px;
         background-color: white;
         border-radius: 5px;
         display: flex;
