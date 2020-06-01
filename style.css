@@ -291,7 +291,7 @@ a {
     color: black;
 }
 
-#king-tut, #fortnite, #shanghai, #fitbit {
+#king-tut, #fortnite, #shanghai, #fitbit, #mi-reality {
     
     width: 210px;
     text-align: center;
@@ -322,7 +322,7 @@ a {
         margin-bottom: 15px;
     }
 
-    #king-tut, #fortnite, #shanghai, #fitbit {
+    #king-tut, #fortnite, #shanghai, #fitbit, #mi-reality {
         width: 250px;
     }
 }
