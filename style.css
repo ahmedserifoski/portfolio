@@ -7,7 +7,7 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    background: linear-gradient(115deg, rgb(135, 217, 255),rgb(217, 122, 255) ) no-repeat center center fixed;
+    background: linear-gradient(140deg, rgb(135, 217, 255),rgb(228, 122, 255)) no-repeat center center fixed;
     color: rgb(48, 48, 48);
     display: flex;
     flex-wrap: wrap;
@@ -306,6 +306,10 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.underline:hover {
+    text-decoration: underline;
 }
 
 @media screen and (min-width: 500px) {
