@@ -7,7 +7,8 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    background: linear-gradient(140deg, rgb(135, 217, 255),rgb(228, 122, 255)) no-repeat center center fixed;
+    /* background-color: rgb(103, 207, 255); */
+    background: linear-gradient(140deg, rgb(80, 255, 147), rgb(103, 207, 255)) no-repeat center center fixed;
     color: rgb(48, 48, 48);
     display: flex;
     flex-wrap: wrap;
