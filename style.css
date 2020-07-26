@@ -273,7 +273,7 @@ body {
 }
 
 a {
-    text-decoration: none;
+    
     color: rgb(3, 143, 207);
 }
 
@@ -296,7 +296,7 @@ a {
     color: black;
 }
 
-#king-tut, #fortnite, #shanghai, #fitbit, #mi-reality {
+#king-tut, #fortnite, #shanghai, #fitbit, #mi-reality, #my-palindrome-checker, #roman-numeral-converter {
     
     width: 210px;
     text-align: center;
@@ -332,7 +332,7 @@ a {
         margin-bottom: 15px;
     }
 
-    #king-tut, #fortnite, #shanghai, #fitbit, #mi-reality {
+    #king-tut, #fortnite, #shanghai, #fitbit, #mi-reality, #my-palindrome-checker, #roman-numeral-converter {
         width: 250px;
     }
 }
