@@ -195,21 +195,11 @@ body {
     border-radius: 0 0 16px 16px;
 }
 
-.vanilla-projects {
+.vanilla-projects, .react-projects  {
     display: none;
     min-height: 450px;
     overflow-y: auto;
 }
-
-
-
-.react-projects {
-    display: none;
-    min-height: 450px;
-    overflow-y: auto;
-}
-
-
 
 #two-columns {
     background-color: rgb(230, 230, 230);
@@ -291,20 +281,20 @@ a {
 
 .img-wrapper p {
     width: 250px;
-    /* max-width: 250px; */
     font-size: 14px;
     color: black;
 }
 
-#king-tut, #fortnite, #shanghai, #fitbit, #mi-reality, #my-palindrome-checker, #roman-numeral-converter {
+#king-tut, #fortnite, #shanghai, #fitbit, #mi-reality, #my-palindrome-checker, #roman-numeral-converter, #garfield {
     
-    width: 210px;
+    width: auto;
+    height: 120px;
     text-align: center;
     margin: 5px;
-    height: auto;
+    
     overflow: hidden;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid rgb(99, 99, 99);
 }
 
 .link {
@@ -332,8 +322,22 @@ a {
         margin-bottom: 15px;
     }
 
-    #king-tut, #fortnite, #shanghai, #fitbit, #mi-reality, #my-palindrome-checker, #roman-numeral-converter {
+    #king-tut, #fortnite, #shanghai, #fitbit, #mi-reality, #my-palindrome-checker, #roman-numeral-converter, #garfield {
         width: 250px;
+    }
+}
+
+@media (min-width: 620px) {
+    #left {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(5, 20%);
+        justify-content: center;
+        align-items: center;
+    }
+
+    #me {
+        grid-row: 1 / -1;
     }
 }
 
@@ -380,7 +384,6 @@ a {
 
     #left {
         height: 661px;
-        
         margin: 10px;
     }
 
@@ -416,9 +419,18 @@ a {
 }
 
 @media screen and (min-width: 960px) {
+
     #left {
+    
         width: 250px;
+        margin-top: 10px;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
     }
+  
     #right {
         width: 68vw;
     }
