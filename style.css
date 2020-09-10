@@ -8,7 +8,7 @@
 body {
     font-family: "Open Sans", sans-serif;
     /* background-color: rgb(103, 207, 255); */
-    background: linear-gradient(140deg, rgb(139, 255, 132), rgb(103, 207, 255)) no-repeat center center fixed;
+    background: linear-gradient(140deg, rgb(244, 255, 95) 0%, rgba(103, 207, 255)50%, rgb(78, 198, 253)100%) no-repeat center center fixed;
     color: rgb(48, 48, 48);
     display: flex;
     flex-wrap: wrap;
@@ -324,20 +324,6 @@ a {
 
     #king-tut, #fortnite, #shanghai, #fitbit, #mi-reality, #my-palindrome-checker, #roman-numeral-converter, #garfield {
         width: 250px;
-    }
-}
-
-@media (min-width: 620px) {
-    #left {
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-        grid-template-rows: repeat(5, 20%);
-        justify-content: center;
-        align-items: center;
-    }
-
-    #me {
-        grid-row: 1 / -1;
     }
 }
 
