@@ -285,7 +285,7 @@ a {
     color: black;
 }
 
-#king-tut, #fortnite, #shanghai, #fitbit, #mi-reality, #my-palindrome-checker, #roman-numeral-converter, #garfield {
+#king-tut, #fortnite, #shanghai, #fitbit, #mi-reality, #my-palindrome-checker, #roman-numeral-converter, #garfield, #movie {
     
     width: auto;
     height: 120px;
@@ -322,7 +322,7 @@ a {
         margin-bottom: 15px;
     }
 
-    #king-tut, #fortnite, #shanghai, #fitbit, #mi-reality, #my-palindrome-checker, #roman-numeral-converter, #garfield {
+    #king-tut, #fortnite, #shanghai, #fitbit, #mi-reality, #my-palindrome-checker, #roman-numeral-converter, #garfield, #movie {
         width: 250px;
     }
 }
