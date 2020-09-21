@@ -285,7 +285,17 @@ a {
     color: black;
 }
 
-#king-tut, #fortnite, #shanghai, #fitbit, #mi-reality, #my-palindrome-checker, #roman-numeral-converter, #garfield, #movie, #books {
+#king-tut, 
+#fortnite, 
+#shanghai, 
+#fitbit, 
+#mi-reality, 
+#my-palindrome-checker, 
+#roman-numeral-converter, 
+#garfield, 
+#movie, 
+#books,
+#recipes {
     
     width: auto;
     height: 120px;
@@ -322,7 +332,17 @@ a {
         margin-bottom: 15px;
     }
 
-    #king-tut, #fortnite, #shanghai, #fitbit, #mi-reality, #my-palindrome-checker, #roman-numeral-converter, #garfield, #movie, #books {
+    #king-tut, 
+    #fortnite, 
+    #shanghai, 
+    #fitbit, 
+    #mi-reality, 
+    #my-palindrome-checker, 
+    #roman-numeral-converter, 
+    #garfield, 
+    #movie, 
+    #books, 
+    #recipes {
         width: 250px;
     }
 }
